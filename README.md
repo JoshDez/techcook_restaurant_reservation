@@ -1,7 +1,7 @@
 # techcook_restaurant_reservation
 
 
-"TechCookReservation" is a restaurant reservation mobile app that helps you handle your own restaurant reservations.
+"TechCookReservation" is a restaurant reservation mobile app that allows you to manage your own restaurant reservations.
 
 How to Install:
 
