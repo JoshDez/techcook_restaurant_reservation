@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191c21"
+    tools:context=".MakeReservation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/genshin"
+        android:text="@string/preview"
+        android:textAlignment="center"
+        android:textColor="#b4a891"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="413dp"
+        android:layout_height="647dp"
+        android:layout_marginTop="84dp"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="68dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CVback5"
+            android:layout_width="match_parent"
+            android:layout_height="413dp"
+            android:focusableInTouchMode="true"
+            app:cardBackgroundColor="#b4a891"
+            app:cardCornerRadius="15dp"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/genshin"
+                android:padding="5dp"
+                android:text="@string/details"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="60dp"
+                android:text="@string/name"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="60dp"
+                android:paddingEnd="20dp"
+                android:text="@string/name"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="120dp"
+                android:text="@string/date"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="120dp"
+                android:paddingEnd="20dp"
+                android:text="@string/date"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="180dp"
+                android:text="@string/time"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="180dp"
+                android:paddingEnd="20dp"
+                android:text="@string/time"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="240dp"
+                android:text="@string/adults"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtAdults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="240dp"
+                android:paddingEnd="20dp"
+                android:text="@string/adults"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="300dp"
+                android:text="@string/children"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtChildren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="300dp"
+                android:paddingEnd="20dp"
+                android:text="@string/children"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtLabel6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="360dp"
+                android:text="@string/subtotal"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtSubTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingEnd="20dp"
+                android:paddingTop="360dp"
+                android:text="@string/subtotal"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#a37d33"
+            android:fontFamily="@font/genshin"
+            android:text="@string/confirm"
+            android:textColor="#090808" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#b4a891"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

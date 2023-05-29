@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBack"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:backgroundTint="#523f1d"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="top|center_horizontal"
+            android:fontFamily="@font/genshin"
+            android:paddingTop="25dp"
+            android:text="@string/enter_reservation"
+            android:textAlignment="center"
+            android:textColor="#b4a891"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edtNum"
+            android:layout_width="81dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="#d6d4d0"
+            android:textAlignment="center"
+            android:fontFamily="@font/genshin"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/genshin"
+            android:textColor="#090808"
+            android:backgroundTint="#b88523"
+            android:text="@string/confirm"
+            android:layout_gravity="bottom|center_horizontal" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191c21"
+    tools:context=".MakeReservation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="215dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/genshin"
+        android:text="@string/make_reservation"
+        android:textColor="#b4a891"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagelogo" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="404dp"
+        android:layout_height="642dp"
+        android:layout_marginTop="84dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVback1"
+                android:layout_width="345dp"
+                android:layout_height="100dp"
+                android:focusableInTouchMode="true"
+                app:cardBackgroundColor="#b4a891"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/genshin"
+                    android:padding="5dp"
+                    android:text="@string/name"
+                    android:textAlignment="center"
+                    android:textColor="#090808"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="#0B0A0A"
+                    android:ems="10"
+                    android:fontFamily="@font/genshin"
+                    android:hint="@string/enter_name"
+                    android:inputType="textPersonName"
+                    android:textColor="#090808" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVback2"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:focusableInTouchMode="true"
+                app:cardBackgroundColor="#b4a891"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/genshin"
+                    android:padding="5dp"
+                    android:text="@string/date"
+                    android:textAlignment="center"
+                    android:textColor="#090808"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spnMonths"
+                    android:layout_width="150dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/genshin"
+                    android:textColor="#090808"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/spnDays"
+                    android:layout_width="104dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom|center"
+                    android:ems="10"
+                    android:fontFamily="@font/genshin"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+                <Spinner
+                    android:id="@+id/spnYears"
+                    android:layout_width="125dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom|right"
+                    android:fontFamily="@font/genshin"
+                    android:textColor="#090808"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVback3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:focusableInTouchMode="true"
+                app:cardBackgroundColor="#b4a891"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/genshin"
+                    android:padding="5dp"
+                    android:text="@string/time"
+                    android:textAlignment="center"
+                    android:textColor="#090808"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spnHours"
+                    android:layout_width="135dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="bottom"
+                    android:ems="10"
+                    android:fontFamily="@font/genshin"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+                <Spinner
+                    android:id="@+id/spnMinutes"
+                    android:layout_width="133dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="bottom|center"
+                    android:ems="10"
+                    android:fontFamily="@font/genshin"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#090808" />
+
+                <Spinner
+                    android:id="@+id/spnMidday"
+                    android:layout_width="152dp"
+                    android:layout_height="49dp"
+                    android:fontFamily="@font/genshin"
+                    android:textColor="#090808"
+                    android:layout_gravity="bottom|right"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVback4"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:focusableInTouchMode="true"
+                app:cardBackgroundColor="#b4a891"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/genshin"
+                    android:padding="5dp"
+                    android:text="@string/customers"
+                    android:textAlignment="center"
+                    android:textColor="#090808"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingStart="20dp"
+                    android:text="@string/children"
+                    android:textColor="#090808" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingEnd="20dp"
+                    android:text="@string/adults"
+                    android:textColor="#090808" />
+
+                <EditText
+                    android:id="@+id/edtTxtChild"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:fontFamily="@font/genshin"
+                    android:textColor="#090808"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/edtTxtAdult"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:fontFamily="@font/genshin"
+                    android:textColor="#090808"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVback5"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:focusableInTouchMode="true"
+                app:cardBackgroundColor="#b4a891"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/genshin"
+                    android:padding="5dp"
+                    android:text="@string/total"
+                    android:textAlignment="center"
+                    android:textColor="#090808"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/txtResTotal"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="50dp"
+                    android:text="@string/reservation"
+                    android:textColor="#090808" />
+
+                <TextView
+                    android:id="@+id/txtAdultsTotal"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingStart="20dp"
+                    android:text="@string/adult_total"
+                    android:textColor="#090808" />
+
+                <TextView
+                    android:id="@+id/txtChildrenTotal"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingStart="20dp"
+                    android:paddingTop="50dp"
+                    android:text="@string/children_total"
+                    android:textColor="#090808" />
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="@font/genshin"
+                    android:paddingStart="20dp"
+                    android:paddingTop="125dp"
+                    android:text="@string/overall"
+                    android:textColor="#090808" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a37d33"
+                android:fontFamily="@font/genshin"
+                android:text="@string/submit"
+                android:textColor="#090808" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#b4a891"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

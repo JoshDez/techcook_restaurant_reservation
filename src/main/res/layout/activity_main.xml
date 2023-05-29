@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191c21"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/titlelogo"
+        android:layout_width="199dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/titlelogo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="183dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagelogo"
+        tools:ignore="ContentDescription" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="#b4a891"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/list"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/btnViewRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/genshin"
+            android:text="@string/view_reservation"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="#b4a891"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="51dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/make"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/btnMakeRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/genshin"
+            android:text="@string/make_reservation"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="20sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="#b4a891"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694"
+        tools:ignore="MissingConstraints,TextSizeCheck">
+
+        <TextView
+            android:id="@+id/btnDelRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/genshin"
+            android:text="@string/delete_reservation"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/trash"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView4"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="#b4a891"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/report"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/btnGenRep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/genshin"
+            android:text="@string/generate_report"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

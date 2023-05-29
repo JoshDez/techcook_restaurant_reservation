@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191c21"
+    tools:context=".MakeReservation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="241dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/genshin"
+        android:text="@string/res_report"
+        android:textAlignment="center"
+        android:textColor="#b4a891"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="413dp"
+        android:layout_height="647dp"
+        android:layout_marginTop="84dp"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="94dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CVback5"
+            android:layout_width="match_parent"
+            android:layout_height="413dp"
+            android:focusableInTouchMode="true"
+            app:cardBackgroundColor="#b4a891"
+            app:cardCornerRadius="15dp"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/genshin"
+                android:padding="5dp"
+                android:text="@string/report"
+                android:textAlignment="center"
+                android:textColor="#090808"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="60dp"
+                android:text="@string/total_reservations"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTotalRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="70dp"
+                android:paddingEnd="20dp"
+                android:text="0"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="130dp"
+                android:text="@string/total_children"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTotalChildren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="150dp"
+                android:paddingEnd="20dp"
+                android:text="0"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="200dp"
+                android:text="@string/total_adults"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTotalAdults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="220dp"
+                android:paddingEnd="20dp"
+                android:text="0"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="270dp"
+                android:text="@string/total_customers"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTotalCust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="290dp"
+                android:paddingEnd="20dp"
+                android:text="0"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLabel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:fontFamily="@font/genshin"
+                android:paddingStart="20dp"
+                android:paddingTop="350dp"
+                android:text="@string/grand_total"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtGrandTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:fontFamily="@font/genshin"
+                android:paddingTop="350dp"
+                android:paddingEnd="20dp"
+                android:text="PHP 0"
+                android:textColor="#090808"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#b4a891"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagelogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

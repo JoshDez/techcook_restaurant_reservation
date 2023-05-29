@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBack"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:backgroundTint="#b4a891"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/txtNum"
+            android:layout_width="60dp"
+            android:layout_height="88dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="#a37d33"
+            android:fontFamily="@font/genshin"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="#1"
+            android:textColor="#090808"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:fontFamily="@font/genshin"
+            android:paddingTop="15dp"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:fontFamily="@font/genshin"
+            android:paddingBottom="13dp"
+            android:text="July 01, 2023  |  06:00 PM"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="15sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

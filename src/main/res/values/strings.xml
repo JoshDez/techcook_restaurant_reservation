@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">TechCookReservation</string>
+
+    <string name="view_reservation">View All Reservations</string>
+    <string name="make_reservation">Make Reservation</string>
+    <string name="delete_reservation">Delete Reservation</string>
+    <string name="generate_report">Generate Report</string>
+
+
+    <!-- GENERATE REPORT STRINGS -->
+    <string name="report">Report</string>
+    <string name="res_report">Reservation Report</string>
+    <string name="total_reservations">Total number \nof Reservations</string>
+    <string name="total_children">Total number \nof Children</string>
+    <string name="total_adults">Total number \nof Adults</string>
+    <string name="total_customers">Total number \nof Customers</string>
+    <string name="grand_total">Grand Total</string>
+
+
+    <!-- DELETE RESERVATION STRINGS -->
+    <string name="enter_reservation">Enter reservation # \nto delete</string>
+
+
+    <!-- VIEW RESERVATION STRINGS -->
+    <string name="reservations">Reservations</string>
+
+    <!-- PREVIEW RESERVATION STRINGS -->
+    <string name="details">Details</string>
+    <string name="preview">Preview</string>
+    <string name="confirm">Confirm</string>
+    <string name="subtotal">Sub Total:</string>
+
+
+    <!-- MAKE RESERVATION STRINGS -->
+    <string name="enter_name">Enter your name</string>
+    <string name="name">Name</string>
+
+    <string name="date">Date</string>
+
+    <string name="time">Time</string>
+
+    <string name="customers">Customer/s</string>
+    <string name="children">No. of Children</string>
+    <string name="adults">No. of Adults</string>
+
+    <string name="total">Total</string>
+    <string name="reservation">Reservation:</string>
+    <string name="adult_total">Adult Total:</string>
+    <string name="children_total">Children Total:</string>
+    <string name="overall">Overall Total:</string>
+
+    <string name="submit">Submit</string>
+
+    <string-array name="month_options">
+        <item>Month:</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="year_options">
+        <item>Year:</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+</resources>
